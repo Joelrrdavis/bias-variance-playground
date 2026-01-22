@@ -1,8 +1,8 @@
-# Bias–Variance Playground (GitHub Pages)
+# Bias–Variance Playground 
 
-An interactive, in-browser simulator for teaching regression, under/overfitting, and the bias–variance tradeoff.
+An interactive, in-browser simulator for teaching regression, 
 
-It runs **entirely on GitHub Pages** using **streamlit-lite** (Python in the browser via Pyodide). No server required.
+runs **entirely on GitHub Pages** using **streamlit-lite** (Python in the browser via Pyodide). No server required.
 
 ---
 
@@ -22,41 +22,14 @@ It runs **entirely on GitHub Pages** using **streamlit-lite** (Python in the bro
 - `index.html` – boots streamlit-lite and loads `app.py`
 - `app.py` – Streamlit app (NumPy + Matplotlib only for broad Pyodide compatibility)
 - `.nojekyll` – avoids GitHub Pages/Jekyll processing
-- `PAGES_SETTINGS.md` – quick checklist for GitHub Pages configuration
 
 ---
 
-## Deploy on GitHub Pages
 
-1. Create a new repo (e.g., `bias-variance-playground`) and push these files to the **repo root**.
-2. In GitHub, go to **Settings → Pages**
-3. Under **Build and deployment**:
-   - **Source:** Deploy from a branch
-   - **Branch:** `main`
-   - **Folder:** `/ (root)`
-4. Click **Save**
 
-Your site will appear at:
+## notes
 
-`https://<your-username>.github.io/<repo-name>/`
-
----
-
-## Local preview (optional)
-
-```bash
-python -m http.server 8000
-```
-
-Then open:
-
-`http://localhost:8000`
-
----
-
-## Classroom notes
-
-Suggested demo sequence:
+Suggested sequence:
 
 1. `noise=0`, `outliers=0`, `degree=1` → underfit (bias)
 2. Increase degree → fit improves
